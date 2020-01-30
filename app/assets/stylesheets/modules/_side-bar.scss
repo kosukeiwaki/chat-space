@@ -1,3 +1,5 @@
+$main-color: #ffffff;
+
 .side-bar{
   height: 100%;
   background-color: #253141;
@@ -16,7 +18,7 @@
     &__user-name{
       font-size: 16px;
       font-weight: bold;
-      color: #ffffff;
+      color: $main-color;
       line-height: 20px;
     }
     &__btn{
@@ -26,12 +28,12 @@
       display: flex;
       justify-content: flex-end;
       &--edit{
-        color: #ffffff;
+        color: $main-color;
         margin-right: 5px;
         text-decoration: none;
       }
       &--gear{
-        color: #ffffff;
+        color: $main-color;
         text-decoration: none;
       }
     }
@@ -47,13 +49,13 @@
       &__name{
         font-size: 15px;
         font-weight: bold;
-        color: #ffffff;
+        color: $main-color;
         margin-bottom: 5px;
       }
       &__text{
         font-size: 11px;
         font-weight: bold;
-        color: #ffffff;        
+        color: $main-color        
       }
     }
   }

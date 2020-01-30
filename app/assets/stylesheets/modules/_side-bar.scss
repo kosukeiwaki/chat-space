@@ -1,0 +1,26 @@
+.side-bar{
+  height: 100%;
+  background-color: #253141;
+  width:300px;
+  &__header{
+    height: 100px;
+    background-color: #253141;
+  //  &__top-items{
+  //   margin: 0 20px;
+  //   font-weight: bold;
+  //   font-size: 16px;
+  //   color: #ffffff;
+  //   line-height: 100px;
+  //   &__username{
+  //     font-size: 16px;
+  //     font-weight: bold;
+  //     color: #ffffff;
+  //   }
+  //  }
+  }
+  &__group-list{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+  }
+
+}

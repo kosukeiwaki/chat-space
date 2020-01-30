@@ -35,7 +35,8 @@
     .form__box
       .form__box__newtext
         %input.form__box__newtext__textbox{:placeholder => "type a message"}
-        .form__box__newtext__image
-          <i class="far fa-image"></i>
+        %label{class: "form__box__newtext__image"}
+          = icon('far', 'image')
+          %input{type: "file"}
       .form__box__send
         Send

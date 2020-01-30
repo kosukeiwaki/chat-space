@@ -1,4 +1,41 @@
 .main-chat
- .main-chat__header
- .main-chat__message-list
- .main-chat__message-form
+  .header
+    .header__group
+      .header__group__name
+        test
+      .header__group__member
+        Member iwaki
+    .header__edit
+      edit
+
+  .message-list
+    .message-list__message-box
+      .message-list__message-box__name
+        iwaki
+        .message-list__message-box__name__time
+          2019/11/20(web) 17:43:01
+      .message-list__message-box__text
+        おはよっ！
+    .message-list__message-box
+      .message-list__message-box__name
+        iwaki
+        .message-list__message-box__name__time
+          2019/11/20(web) 17:43:01
+      .message-list__message-box__text
+        おはよっ！
+    .message-list__message-box
+      .message-list__message-box__name
+        iwaki
+        .message-list__message-box__name__time
+          2019/11/20(web) 17:43:01
+      .message-list__message-box__text
+        おはよっ！
+
+  .form
+    .form__box
+      .form__box__newtext
+        %input.form__box__newtext__textbox{:placeholder => "type a message"}
+        .form__box__newtext__image
+          <i class="far fa-image"></i>
+      .form__box__send
+        Send

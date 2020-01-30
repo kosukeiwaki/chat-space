@@ -1,9 +1,28 @@
 .side-bar
- .side-bar__header
-  .__top-items
-   .__user-name
-    iwaki
-   .__post-btn
-   .__edit-btn
- .side-bar__group-list
+  .side-bar__header
+    .side-bar__header__top-items
+      .side-bar__header__top-items__user-name
+        iwaki
+      .side-bar__header__top-items__btn
+        =link_to "#" ,class: "side-bar__header__top-items__btn--edit" do
+          = icon('fas', 'edit', class: "side-bar__header__top-items__btn--edit")
+        =link_to "#" ,class: "side-bar__header__top-items__btn--gear" do
+          = icon('fas', 'cog', class: "side-bar__header__top-items__btn--gear")
+
+  .side-bar__group-list
+    .side-bar__group-list__items
+      .side-bar__group-list__items__name
+        techchamp
+      .side-bar__group-list__items__text
+        まだメッセージがありません。
+    .side-bar__group-list__items
+      .side-bar__group-list__items__name
+        techchamp
+      .side-bar__group-list__items__text
+        まだメッセージがありません。
+    .side-bar__group-list__items
+      .side-bar__group-list__items__name
+        techchamp
+      .side-bar__group-list__items__text
+        まだメッセージがありません。
   

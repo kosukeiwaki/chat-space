@@ -5,22 +5,58 @@
   &__header{
     height: 100px;
     background-color: #253141;
-  //  &__top-items{
-  //   margin: 0 20px;
-  //   font-weight: bold;
-  //   font-size: 16px;
-  //   color: #ffffff;
-  //   line-height: 100px;
-  //   &__username{
-  //     font-size: 16px;
-  //     font-weight: bold;
-  //     color: #ffffff;
-  //   }
-  //  }
+    display: flex;
+    align-items: center;
+   &__top-items{
+    margin: 0 20px;
+    width: 260px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    &__user-name{
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      line-height: 20px;
+    }
+    &__btn{
+      width: 60px;
+      float: left;
+      line-height: 20px;
+      display: flex;
+      justify-content: flex-end;
+      &--edit{
+        color: #ffffff;
+        margin-right: 5px;
+        text-decoration: none;
+      }
+      &--gear{
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+   }
   }
   &__group-list{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    &__items{
+    height: 91px;
+    width: 260px;
+    padding: 20px 20px 40px 20px;
+      &__name{
+        font-size: 15px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 5px;
+      }
+      &__text{
+        font-size: 11px;
+        font-weight: bold;
+        color: #ffffff;        
+      }
+    }
   }
+  
 
 }

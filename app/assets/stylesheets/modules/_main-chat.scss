@@ -83,16 +83,16 @@ $main-text-color: #333333;
           display: none;
         }
       }
-    }
-    &__send{
-      background-color: $blue-color;
-      color: #fafafa;
-      height: 50px;
-      cursor: pointer;
-      padding: 0 30px;
-      line-height: 50px;
-      font-weight: bold;
-      margin-left: 15px;
+      &__send{
+        background-color: $blue-color;
+        color: #fafafa;
+        height: 50px;
+        cursor: pointer;
+        padding: 0 30px;
+        line-height: 50px;
+        font-weight: bold;
+        margin-left: 15px;
+      }
     }
  }
 }

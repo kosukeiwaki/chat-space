@@ -11,12 +11,21 @@
   .message-list
     = render @messages
 
+  -# .form
+  -#   .form__box
+  -#     .form__box__newtext
+  -#       = form_for [@group, @message] do |f| 
+  -#         = f.text_field :text, class: 'form__box__newtext__textbox', placeholder: 'type a message'
+  -#           = f.label :image, class: 'form__box__newtext__image' do
+  -#             = icon('far', 'image')
+  -#             = f.file_field :image, class: 'hidden'
+  -#         = f.submit 'Send', class: 'form__box__newtext__send'
+
   .form
-    .form__box
-      .form__box__newtext
-        = form_for [@group, @message] do |f| 
-          = f.text_field :text, class: 'form__box__newtext__textbox', placeholder: 'type a message'
-          = f.label :image, class: 'form__box__newtext__image' do
-            = icon('far', 'image')
-            = f.file_field :image, class: 'hidden'
-          = f.submit 'Send', class: 'form__box__newtext__send'
+    = form_for [@group, @message] do |f|
+      .input-box
+        = f.text_field :text, class: 'input-box__message', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'

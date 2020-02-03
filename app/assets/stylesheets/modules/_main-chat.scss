@@ -57,42 +57,88 @@ $main-text-color: #333333;
   }
 }
 
+// .form{
+//   height: 90px;
+//   background-color: #d2d2d2;
+//   padding: 20px 40px;
+//   &__box{
+//     display: flex;
+//     &__newtext{
+//       width: 100%;
+//       position: relative;
+//       &__textbox{
+//         height: 50px;
+//         width: 100%;
+//         padding: 0 40px 0 10px;
+//         color: #434A54;
+//         border-style: none;
+//       }
+//       &__image{
+//         position: absolute;
+//         top: 10px;
+//         right:10px;
+//         cursor: pointer;
+//         font-size: 25px;
+//         input{
+//           display: none;
+//         }
+//       }
+//       &__send{
+//         background-color: $blue-color;
+//         color: #fafafa;
+//         height: 50px;
+//         cursor: pointer;
+//         padding: 0 30px;
+//         line-height: 50px;
+//         font-weight: bold;
+//         margin-left: 15px;
+//       }
+//     }
+//  }
+// }
+
+.new-message{
+  width:100%;
+}
+
 .form{
   height: 90px;
   background-color: #d2d2d2;
   padding: 20px 40px;
-  &__box{
+
+  .new_message{
     display: flex;
-    &__newtext{
-      width: 100%;
-      position: relative;
-      &__textbox{
-        height: 50px;
-        width: 100%;
-        padding: 0 40px 0 10px;
-        color: #434A54;
-        border-style: none;
-      }
-      &__image{
-        position: absolute;
-        top: 10px;
-        right:10px;
-        cursor: pointer;
-        font-size: 25px;
-        input{
-          display: none;
-        }
-      }
-    }
-    &__send{
-      background-color: $blue-color;
-      color: #fafafa;
+  }
+
+  .input-box{
+    position: relative;
+    width: 100%;
+
+    &__message{
       height: 50px;
-      cursor: pointer;
-      padding: 0 30px;
-      line-height: 50px;
-      font-weight: bold;
-      margin-left: 15px;
+      padding: 0 40px 0 10px;
+      color: #434A54;
+      border-style:none;
+      width: 100%;
     }
- }
+    &__image{
+      position: absolute;
+      top:10px;
+      right: 10px;
+      font-size: 25px;
+      input{
+        display: none;
+      }
+    } 
+  }
+  &__submit{
+    background-color: $blue-color;
+    color: #fafafa;
+    height: 50px;
+    cursor: pointer;
+    padding: 0 30px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-left: 15px;
+  }
 }

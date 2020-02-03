@@ -6,4 +6,15 @@ class User < ApplicationRecord
 
          has_many :group_user
          has_many :groups, through: :group_user
+
+        #  def show_users
+        #     @users = Group.find[params[:id]]
+        #     if @users.present?
+        #       <% @users.each do|user| %>
+        #        <%= user.name %>
+        #        <% end %>
+        #     else
+        #       'メンバーがいません'
+        #     end
+        #  end
 end

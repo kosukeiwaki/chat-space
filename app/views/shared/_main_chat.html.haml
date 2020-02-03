@@ -4,8 +4,9 @@
       .header__group__name
         = @group.name
       .header__group__member
-        Member iwaki
-    = link_to "#", class: "header__edit" do
+        -@group.users.each do |user|
+          =user.name
+    = link_to edit_group_path(current_user), class: "header__edit" do
       edit
 
   .message-list

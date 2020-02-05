@@ -34,30 +34,30 @@ $(function(){
       </div>`
      return html;
    };
- }
-$('#new_message').on('submit', function(e){
- e.preventDefault();
- var formData = new FormData(this);
- var url = $(this).attr('action')
- $.ajax({
-   url: url,
-   type: "POST",
-   data: formData,
-   dataType: 'json',
-   processData: false,
-   contentType: false
- })
-  .done(function(data){
-    var html = buildHTML(data);
-    $('.message-list').append(html);
-    $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-    $('#message_text').reset(); //メッセージの中身を空にするのでインプットタグのをval('')で空に
+  }
+  $('#new_message').on('submit', function(e){
+    e.preventDefault();
+    var formData = new FormData(this);
+    var url = $(this).attr('action')
+    $.ajax({
+      url: url,
+      type: "POST",
+      data: formData,
+      dataType: 'json',
+      processData: false,
+      contentType: false
+    })
+    .done(function(data){
+      var html = buildHTML(data);
+      $('.message-list').append(html);
+      $('form')[0].reset();
+      $('.message-list').animate({ scrollTop: $('.message-list')[0].scrollHeight});
+    })
+    .fail(function(data){
+      alert('エラーが発生したためメッセージは送信できませんでした。');
+    })
+    .always(function(data){
+      $('.form__submit').prop('disabled', false); //ここでdisabledを解除して連続で送信できるようにしている
+    })
   })
-  .fail(function(data){
-    alert('エラーが発生したためメッセージは送信できませんでした。');
-  })
-  .always(function(data){
-    $('.form_submit').prop('disabled', false); //ここでdisabledを解除して連続で送信できるようにしている
-  })
-})
 });

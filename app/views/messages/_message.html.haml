@@ -7,4 +7,4 @@
     - if message.text.present?
       %p.message-list__message-box__text__img
         = message.text
-      = image_tag message.image.url, class: 'message-list__message-box__text__image' if message.image.present?
+    = image_tag message.image.url, class: 'message-list__message-box__text__image' if message.image.present?

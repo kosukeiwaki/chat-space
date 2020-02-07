@@ -40,6 +40,7 @@ $main-color: #ffffff;
    }
   }
   &__group-list{
+    overflow:scroll;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     &__items{
@@ -55,7 +56,7 @@ $main-color: #ffffff;
       &__text{
         font-size: 11px;
         font-weight: bold;
-        color: $main-color        
+        color: $main-color;  
       }
     }
   }

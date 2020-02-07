@@ -80,7 +80,7 @@ $(function(){
       }
       })
       .fail(function(){
-        console.log('erorr');
+        alert('erorr');
       });
     }
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
